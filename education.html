@@ -7,12 +7,24 @@
                 border: 1px solid plum
             }
             table{
-                border: 3px solid black(255,)
+                border: 3px solid black(255,);
+                border-collapse: collapse;
+
             }
+            /*education-table tbody tr td{}*/
+            td:hover{
+            background: cadetblue;
+            color: aliceblue;
+             }
+             tr:nth-child(2){
+                background: khaki;
+                color:green;
+             }
+
         </style>
     </head>
     <body>
-        <table>
+        <table class="education-table">
             <caption><b>Qualification Details</b></caption>
             <thead>
             <tr>
