@@ -1,39 +1,53 @@
-<!DOCTYPE html>
 <html>
     <head>
         <title>Flex Demo</title>
         <style>
-            .container{
+           .container{
+                height: 500px;
+                border: 1px solid rgb(31, 31, 31);
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                height: 500px;
-                border: 2px solid sandybrown;
-                align-items: flex-start;
-            }
-            .conntainer div{
+              /*  justify-content: space-evenly;*/
+              /*gap: 40px;*/
+                
+
+           }
+           .container div{
                 background: rgb(189, 242, 244);
-                border: 1px solid cadetblue;
-                /*padding: 5px;*/
+                border: 1px solid rgb(2, 162, 162);
+                /*width: 300px;*/
             }
+            .flex-item-1{
+                flex: 1;
 
+            }
+            .flex-item-2{
+                flex: 2;
 
+            }
+            .flex-item-3{
+                
+                flex: 2;
+            }
+         
         </style>
     </head>
     <body>
-        <div class="conrtainer">
-            <div class="flex-item1">
-                <h3>Angular</h3>
-                <p>"aaaaaaa aaaaaaaaaaaaaaa"</p>
+        <div class="container">
+            <div class="flex-item-1">
+                <h3> Angular - Web Development</h3>
+                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
-            <div class="flex-item2">
-                <h3>Angular</h3>
-                <p>"bbbb bbb bb bbbbb "</p>
+            <div class="flex-item-2">
+                <h3> React - Web Development</h3>
+                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
-            <div class="flex-item3">
-                <h3>Angular</h3>
-                <p>"aaa cc cc cc cccc aaaaa"</p>
+            <div class="flex-item-3">
+                <h3> Fullstack Development</h3>
+                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
             </div>
+          
         </div>
     </body>
 </html>
